@@ -8,7 +8,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-HEHE
+<div class="container">
+
+    <div class="btnContainer">
+        <button onclick="decrementID()"><</button>
+        <button onclick="incrementID()">></button>
+    </div>
+
+    <div class="pokedex">
+        <div class="pokedexHeader">
+            <div>
+                <span>#</span>
+                <input  id="pokemon-id"
+                type="text"
+                placeholder="001">
+            </div>
+
+            <input  id="pokemon-name"
+            type="text"
+            placeholder="Bulbizarre">
+            <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="pokemon">
+            <div class="types">
+            </div>
+        </div>
+        <div class="pokedexStat">
+            <div class="pokedexStatItem">
+                <h2>PV</h2>
+                <span id="pokemon-hp">000</span>
+            </div>
+            <div class="pokedexStatItem">
+                <h2>ATT</h2>
+                <span id="pokemon-attack">000</span>
+            </div>
+            <div class="pokedexStatItem">
+                <h2>DEF</h2>
+                <span id="pokemon-defense">000</span>
+            </div>
+            <div class="pokedexStatItem">
+                <h2>VIT</h2>
+                <span id="pokemon-speed">000</span>
+            </div>
+        </div>
+    </div>
+
+</div>
 <script src="app.js"></script>
 </body>
 </html>
