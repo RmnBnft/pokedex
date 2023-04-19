@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Pokemon GB';
-    src:    url('../font/pokemongb.ttf')
+    font-family: 'PKMN';
+    src:    url('../font/pokemon-red-blue-yellow-de-it-fr-es-gb.ttf')
             format('truetype');
 }
 
@@ -14,13 +14,12 @@ input {
     border: none;
     background: none;
     outline: none;
-    font-family: 'Pokemon GB';
+    font-family: 'PKMN';
     cursor: pointer;
 }
 
 input::placeholder {
     color: #000;
-
 }
 
 #pokemon-name {
@@ -44,7 +43,7 @@ button {
     font-size: 2rem;
     width: 100px;
     height: 50px;
-    font-family: 'Pokemon GB';
+    font-family: 'PKMN';
     background: #f1f1f193;
     border: #000 solid 1px;
     border-radius: 50px;
@@ -67,7 +66,7 @@ button {
 }
 
 .pokedex {
-    font-family: 'Pokemon GB';
+    font-family: 'PKMN';
     position: relative;
     height: 800px;
     width: 400px;
