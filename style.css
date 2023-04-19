@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'PKMN';
-    src:    url('../font/pokemon-red-blue-yellow-de-it-fr-es-gb.ttf')
+    src:    url('font/pokemon-red-blue-yellow-de-it-fr-es-gb.ttf')
             format('truetype');
 }
 
