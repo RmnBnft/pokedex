@@ -16,38 +16,67 @@
     </div>
 
     <div class="pokedex">
+
         <div class="pokedexHeader">
-            <div>
+            <input  id="pokemon-name"
+            type="text"
+            placeholder="Bulbizarre">
+            
+            <div class="idContainer">
                 <span>#</span>
                 <input  id="pokemon-id"
                 type="text"
                 placeholder="001">
             </div>
-
-            <input  id="pokemon-name"
-            type="text"
-            placeholder="Bulbizarre">
-            <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="pokemon">
-            <div class="types">
-            </div>
         </div>
+
+        <div class="pokedexImg">
+                <img id="pokemon-img" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="pokemon">
+        </div>
+
+        <div class="pokeTypes">
+                <span id="pokemon-type1"></span>
+                <span id="pokemon-type2"></span>
+        </div>
+
         <div class="pokedexStat">
             <div class="pokedexStatItem">
-                <h2>PV</h2>
+                <h2>P.V</h2>
                 <span id="pokemon-hp">000</span>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner-hp"></div>
+                    </div>
+                </div>
             </div>
             <div class="pokedexStatItem">
                 <h2>ATT</h2>
                 <span id="pokemon-attack">000</span>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner-atk"></div>
+                    </div>
+                </div>
             </div>
             <div class="pokedexStatItem">
                 <h2>DEF</h2>
                 <span id="pokemon-defense">000</span>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner-def"></div>
+                    </div>
+                </div>
             </div>
             <div class="pokedexStatItem">
                 <h2>VIT</h2>
                 <span id="pokemon-speed">000</span>
+                <div class="stat-bar">
+                    <div class="bar-outer">
+                        <div class="bar-inner-vit"></div>
+                    </div>
+                </div>
             </div>
+
         </div>
     </div>
 
