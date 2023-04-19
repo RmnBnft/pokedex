@@ -14,16 +14,22 @@ input {
     background: none;
     outline: none;
     font-family: 'Pokemon GB';
+    cursor: pointer;
 }
 
 input::placeholder {
     color: #000;
+
 }
 
 #pokemon-name {
-    text-align: center;
+    text-align: start;
+    padding-left: 1rem;
     font-size: 1.4rem;
-    width: 250px;
+    width: 280px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    background: #f1f1f1b9;
 }
 
 #pokemon-id {
@@ -35,6 +41,12 @@ input::placeholder {
 button {
     cursor: pointer;
     font-size: 2rem;
+    width: 100px;
+    height: 50px;
+    font-family: 'Pokemon GB';
+    background: #f1f1f193;
+    border: #000 solid 1px;
+    border-radius: 50px;
 }
 
 .idContainer {
@@ -48,7 +60,7 @@ button {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: linear-gradient(45deg, #f1f1f1, #0f0f0f);
 }
@@ -63,7 +75,7 @@ button {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 5px solid #000;
+    border: 1px solid #000;
     border-radius: 30px;
     transition: all 0.5s linear;
 }
@@ -71,30 +83,49 @@ button {
 .pokedexHeader {
     width: 100%;
     height: 50px;
-    position: absolute;
     top: 10px;
     display: flex;
     justify-content: space-evenly;
 }
 
+
+
 .pokedexImg img {
-    height: 100%;
+    height: 90%;
+    width: 100%;
     width: auto;
+    border: 1px solid #000;
+    border-radius: 10%;
+    margin: 5px;
+    background: #f1f1f1b9;
+    transition: all 0.5s linear;
 }
 
 .pokedexImg {
     height: 300px;
-    width: 300px;
+    width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top: 80px;
+    align-items: flex-start;
+    transition: all 0.5s linear;
+
+}
+
+.pokeTypes span {
+    background: #f1f1f153;
+    border: #000 solid 1px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 0.2rem;
     transition: all 0.5s linear;
 }
 
 .pokedexStat {
-    width: 100%;
+    width: 85%;
     height: 250px;
+    background: #f1f1f1b9;
+    border: 1px solid #000;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -124,9 +155,10 @@ button {
     display: flex;
     width: 100%;
     height: 0.5rem;
-    border: 1px solid #0000005f;
+    border: 1px solid #000000b4;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
+    /* background-color: #f1f1f1db; */
 }
 
 .bar-inner-hp,

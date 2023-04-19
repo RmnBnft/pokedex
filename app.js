@@ -81,6 +81,7 @@ function displayPokemon() {
         if (data.types[1]) {
             document.getElementById('pokemon-type2').innerHTML = data.types[1].name;
             document.getElementById('pokemon-type2').style.display = 'inline-block';
+            document.getElementById('pokemon-type2').style.backgroundColor = 'rgba(' + typeColors[data.types[1].name][0] + ', ' + typeColors[data.types[1].name][1] + ', ' + typeColors[data.types[1].name][2] + ' , 0.9)';
         } else {
             document.getElementById('pokemon-type2').style.display = 'none';
         }
@@ -92,9 +93,8 @@ function displayPokemon() {
         document.querySelector('.bar-inner-atk').style.backgroundColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
         document.querySelector('.bar-inner-def').style.backgroundColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
         document.querySelector('.bar-inner-vit').style.backgroundColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
-        document.querySelector('.pokedex').style.borderColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
-        document.querySelector('.pokedex').style.boxShadow = '0 0 10px rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
-        document.querySelector('.pokedex').style.backgroundColor = 'linear-gradient(90deg, rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + '), #f1f1f1)';
+        document.querySelector('.pokedex').style.background = 'rgba(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ', 0.9)';
+        document.querySelector('.pokedex').style.boxShadow = '0 0 20px rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
     });
 }
 
