@@ -15,7 +15,6 @@ input {
     background: none;
     outline: none;
     font-family: 'PKMN';
-    cursor: pointer;
 }
 
 input::placeholder {
@@ -26,8 +25,8 @@ input::placeholder {
     text-align: start;
     padding-left: 1rem;
     font-size: 1.4rem;
-    width: 280px;
-    border: 1px solid #000;
+    width: 290px;
+    border: 1px solid #f1f1f1;
     border-radius: 50px;
     background: #f1f1f1b9;
 }
@@ -75,7 +74,7 @@ button {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid #000;
+    border: 1px solid #f1f1f1;
     border-radius: 30px;
     transition: all 0.5s linear;
 }
@@ -94,7 +93,7 @@ button {
     height: 90%;
     width: 100%;
     width: auto;
-    border: 1px solid #000;
+    border: 1px solid #f1f1f1;
     border-radius: 10%;
     margin: 5px;
     background: #f1f1f1b9;

@@ -3,6 +3,7 @@ let pokemonID = 1;
 const typesContainer = document.querySelector('.types');
 const inputPokeID = document.querySelector('#pokemon-id');
 const inputPokeName = document.querySelector('#pokemon-name');
+const currentColor = "'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')'"
 
 const typeColors = {
     "Roche":     [182, 158,  49],
@@ -89,7 +90,7 @@ function displayPokemon() {
         document.querySelector('.bar-inner-atk').style.width = data.stats.atk + '%';
         document.querySelector('.bar-inner-def').style.width = data.stats.def + '%';
         document.querySelector('.bar-inner-vit').style.width = data.stats.vit + '%';
-        document.querySelector('.bar-inner-hp').style.backgroundColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
+        document.querySelector('.bar-inner-hp').style.backgroundColor ='rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
         document.querySelector('.bar-inner-atk').style.backgroundColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
         document.querySelector('.bar-inner-def').style.backgroundColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
         document.querySelector('.bar-inner-vit').style.backgroundColor = 'rgb(' + typeColors[data.types[0].name][0] + ', ' + typeColors[data.types[0].name][1] + ', ' + typeColors[data.types[0].name][2] + ')';
